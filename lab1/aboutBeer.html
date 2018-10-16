@@ -4,12 +4,26 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Piwerko</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<!--[if lt IE 9]>
-        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
 </head>
 
 <body>
+	<header>
+		<a href="#navigation_bar"><img src=_img/banner.png width="100%" height="auto" alt="page banner" /></a>
+		<nav id="navigation_bar">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="catalog.html">Catalog</a></li>
+				<li><a href="aboutBeer.html">About Beer</a></li>
+				<li><a href="about.html">About Page</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li id="log_in"><a href="logIn.html">Make Acc</a></li>
+			</ul><br />
+		</nav>
+	</header>
 	<h2><b>Zalety picia piwa: </b> </h2>
 	<ol>
 		<li>doskonaly smak</li>
@@ -27,32 +41,44 @@
 		</li>
 	</ul>
 
+	<summary>
+		<p>Piwko jest dobre na maksa:</p>
+		<meter value="10" min="0" max="10">10 out of 10</meter><br>
+
+	</summary>
+
 	<div>
-		<h3>Piwny Katalog</h3>
-		<table>
-			<thead>
-				<tr>
-					<th colspan="2">
-						Zestawienie Piwne
-					</th>
-				</tr>
-				<tr>
-					<th>Marka</th>
-					<th>Procent alk.</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Perla Export</td>
-					<td>6.0%</td>
-				</tr>
-				<tr>
-					<td>Namyslow</td>
-					<td>6.0%</td>
-				</tr>
-			</tbody>
-		</table>
+		<section>
+			<details>
+				<summary>zestawienie piw </summary>
+				<h3>Piwny Katalog</h3>
+				<table>
+					<thead>
+						<tr>
+							<th colspan="2">
+								Zestawienie Piwne
+							</th>
+						</tr>
+						<tr>
+							<th>Marka</th>
+							<th>Procent alk.</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Perla Export</td>
+							<td><mark>6.0</mark>%</td>
+						</tr>
+						<tr>
+							<td>Namyslow</td>
+							<td><mark>6.0</mark>%</td>
+						</tr>
+					</tbody>
+				</table>
 	</div>
+	</details>
+
+	</section>
 
 </body>
 
