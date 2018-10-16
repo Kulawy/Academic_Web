@@ -3,8 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Piwo to nasze paliwo</title>
+    <title>Piwerko</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
 </head>
 
 <body>
@@ -14,10 +17,11 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="catalog.html">Catalog</a></li>
-                <li><a href="aboutBeer.html">About Beer</a></li>
+                <li><a href="aboutBeer.html">About Beers</a></li>
                 <li><a href="about.html">About Page</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li id="log_in"><a href="logIn.html">Make Acc</a></li>
+                <li><a href="additionalnfoForm.html">Tell us about yourself</a></li>
+                <li id="log_in" class="active"><a href="logIn.html">Register</a></li>
             </ul><br />
         </nav>
     </header>
@@ -56,30 +60,11 @@
                 XXX XXX XXX
             </label>
             <br />
-            <label>Stopień doświadczenia: </label>
-            <select name="someInfoAboutSender">
-                <option>Teoretyk</option>
-                <option>Początkujący</option>
-                <option selected="true">Wprawiony</option>
-                <option>Koneser</option>
-            </select>
-            <br />
-            <label>Doświadczenie życiem: </label>
-            <select>
-                <option selected="false">Child (&lt; 18)</option>
-                <option selected="false">Młody giewny ( 18 &gt; wiek &lt; 30)</option>
-                <option selected="false">Trójka z Przodu</option>
-                <option selected="false">Czwórka z Przodu</option>
-                <option selected="True">Leciwy</option>
-            </select>
-            <br />
-            <label for="message">Message:</label>
-            <textarea name="message" maxlength="200">Enter your message here... </textarea>
-            <br />
+            
             <input type="checkbox" name="opened" id="opened" checked="true" />
             <label for="opened">Zaznaczone ?</label>
             <br />
-            <input type="submit" value="Send" />
+            <input type="submit" value="Submit" />
         </form>
     </section>
     <footer>

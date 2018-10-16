@@ -30,7 +30,11 @@ nav li a{
 }
 
 nav li:hover{
-    background-color: brown;
+    background-color: #630;
+}
+
+.active{
+    background-color: #fc6;
 }
 
 #log_in{
