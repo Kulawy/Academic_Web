@@ -12,11 +12,6 @@ body{
     align-content: center;
 }
 
-.content{
-    max-width: 800px;
-    margin: auto;
-}
-
 @media only screen and (max-width: 800px){
     body{
         background-image: url("_img/background_img.png");
@@ -33,14 +28,6 @@ section{
 }
 
 
-
-table {
-    border-collapse: collapse;
-}
-
-table, th, td {
-    border: 1px solid black;
-}
 
 
 nav ul{
@@ -156,4 +143,12 @@ h1 {
 
 #firstp_about{
     font-size: 120%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 10px inset green;
 }
