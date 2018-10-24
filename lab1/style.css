@@ -6,6 +6,7 @@
 
 
 body{
+    position: relative;
     padding: 0;
     margin: 0;
     background-color: whitesmoke;
@@ -19,10 +20,20 @@ body{
     }
 }
 
+.navigation_bar{
+    position: sticky;
+    top:0;
+    padding: 50px 0 ;
+}
+
 section{
-    max-width: 500px;
-    margin: auto;
+    /*max-width: 500px;
+    margin: auto;*/
     align-content: center;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0)
     /*display: flex;
     align-items: center;*/
 }
@@ -46,7 +57,7 @@ nav li a{
     display: block;
     color: white;
     text-align: center;
-    padding: 6px 12px;
+    padding: 15px 12px;
     text-decoration: none;
 }
 
@@ -124,8 +135,12 @@ footer{
     text-align: center;
     border-top: 1pt black solid;
     background-color: gray;
-    padding: 2em 0;
+    padding: 1em 0;
     margin-top: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
 }
 
 footer details{
@@ -133,7 +148,8 @@ footer details{
 }
 
 #beer_photo{
-    position: relative;
+    width: auto;
+    height: auto;
     margin: auto;
 }
 
