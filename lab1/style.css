@@ -4,18 +4,35 @@
 }
 */
 
+
 body{
     padding: 0;
     margin: 0;
+    background-color: whitesmoke;
+    align-content: center;
 }
 
-.fancyBorder {
-	border-style: solid;
-	border-width: 0.2em;
-	border-color: magenta;
-	padding: .4em;
-	display: inline-block;
+.content{
+    max-width: 800px;
+    margin: auto;
 }
+
+@media only screen and (max-width: 800px){
+    body{
+        background-image: url("_img/background_img.png");
+        background-attachment: fixed;
+    }
+}
+
+section{
+    max-width: 500px;
+    margin: auto;
+    align-content: center;
+    /*display: flex;
+    align-items: center;*/
+}
+
+
 
 table {
     border-collapse: collapse;
@@ -46,40 +63,71 @@ nav li a{
     text-decoration: none;
 }
 
-nav li:hover {
+/*nav li:hover {
     background-color: #630;
+}*/
+
+button.dropbtn {
+    width: inherit;
+    height: inherit;
+    background-color: darkgoldenrod;
+    color: white;
+    text-decoration: none;
+    border:none;
+    cursor: pointer;
 }
+
+li.dropdown {
+	display: inline-block;
+}
+
 .dropdown-content {
-	display: none;
+    
+    display: none;
+    position: absolute;
 	background-color: black;
-	width: 100%;
+	min-width: 180px;
 	z-index: 1;
 }
-.dropdown {
-	position: relative;
-	display: inline-block;
-	padding: 0;
-	margin: 0;
+.dropdown-content a{
+    color: white;
+    display: block;
+    text-decoration: none;
 }
+
 .dropdown:hover .dropdown-content {
-	display: inline-block;
+	display: block;
 }
+
+.dropdown-content a:hover {
+    background-color: coral;
+}
+
+li a:hover, .dropdown:hover .dropbtb{
+    background-color: royalblue;
+}
+
 
 .active{
     background-color: #fc6;
 }
+
 li.menuItem {
    float: none;
    color: white;
- 
 }
 
 li.menuItem:nth-child(2) {
 	background-color: red;
 }
 
-
-
+.fancyBorder {
+	border-style: dashed;
+	border-width: 0.2em;
+	border-color: magenta;
+	padding: .4em;
+	display: inline-block;
+}
 
 #log_in{
     float: right;
@@ -90,6 +138,7 @@ footer{
     border-top: 1pt black solid;
     background-color: gray;
     padding: 2em 0;
+    margin-top: 1em;
 }
 
 footer details{
@@ -98,5 +147,13 @@ footer details{
 
 #beer_photo{
     position: relative;
-    align-content: center;
+    margin: auto;
+}
+
+h1 {
+    font-size: 21pt;
+}
+
+#firstp_about{
+    font-size: 120%;
 }
