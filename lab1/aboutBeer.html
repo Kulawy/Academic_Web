@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<title>Piwerko</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="styleAboutBeer.css">
 	<!--[if lt IE 9]>
 			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -25,6 +26,7 @@
 			</ul><br />
 		</nav>
 	</header>
+
 	<section>
 		<h2><b>Zalety picia piwa: </b> </h2>
 	<ol>
@@ -47,42 +49,43 @@
 		<p>Piwko jest dobre na maksa:</p>
 		<label>
 			min <meter value="10" min="0" max="10">10 out of 10</meter> max
-		</label><br>
-		
+		</label><br><br>	
 
 	</summary>
+
+	<details id="details01">
+		<summary>zestawienie piw </summary>
+		<h3>Piwny Katalog</h3>
+		<table>
+			<thead>
+				<tr>
+					<th colspan="2">
+						Zestawienie Piwne
+					</th>
+				</tr>
+				<tr>
+					<th>Marka</th>
+					<th>Procent alk.</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Perla Export</td>
+					<td><mark>6.0</mark>%</td>
+				</tr>
+				<tr>
+					<td>Namyslow</td>
+					<td><mark>6.0</mark>%</td>
+				</tr>
+			</tbody>
+		</table>
+   </details>
+   <br><br>
+   
 	</section>
 	
-
-	<section>
-			<details>
-				<summary>zestawienie piw </summary>
-				<h3>Piwny Katalog</h3>
-				<table>
-					<thead>
-						<tr>
-							<th colspan="2">
-								Zestawienie Piwne
-							</th>
-						</tr>
-						<tr>
-							<th>Marka</th>
-							<th>Procent alk.</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Perla Export</td>
-							<td><mark>6.0</mark>%</td>
-						</tr>
-						<tr>
-							<td>Namyslow</td>
-							<td><mark>6.0</mark>%</td>
-						</tr>
-					</tbody>
-				</table>
-
-	       </details>
+	<section id="tableColapse">
+			
 
 	</section>
 
