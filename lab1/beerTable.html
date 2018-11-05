@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <title>Piwerko</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="styleCatalog.css">
-
+    <link rel="stylesheet" type="text/css" href="styleTable.css">
     <!--[if lt IE 9]>
-            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 </head>
 
 <body>
@@ -18,29 +17,18 @@
         <nav id="navigation_bar">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li class="active"><a href="catalog.html">Catalog</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
                 <li><a href="aboutBeer.html">About Beers</a></li>
                 <li><a href="about.html">About Page</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="additionalnfoForm.html">Tell us about yourself</a></li>
+                <li class="active"><a  href="beerTable.html">Beer Tables</a></li>
                 <li id="log_in"><a href="logIn.html">Register</a></li>
             </ul><br />
         </nav>
     </header>
     <div class="backOf">
-        <section>
-            <h1 id="specView">Wybierz rodzaj piwa jaki luisz</h1>
-            <form action="post">
-                <input type="checkbox" name="jasne" value="light" />Jasne<br>
-                <input type="checkbox" name="ciemne" value="dark" />Ciemne<br>
-                <input type="submit" value="submit" />
-            </form>
-            <form action="post">
-                <input type="radio" name="beer" value="beerOne" />Piwo pierwsze<br>
-                <input type="radio" name="beer" value="beerTwo" />Piwo drugie<br>
-                <input type="submit" value="submit" /><input type="reset" value="Clear">
-            </form>
-        </section>
+
     </div>
     <footer>
         <details>
@@ -49,3 +37,5 @@
         </details>
     </footer>
 </body>
+
+</html>

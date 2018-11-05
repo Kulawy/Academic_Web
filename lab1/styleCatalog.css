@@ -1,0 +1,16 @@
+#specView{
+    border: 2em solid transparent;
+    -webkit-border-image: url(_img/piwo_border.png) 35% 35% repeat;
+    -moz-border-image: url(_imgpiwo_border.png)  35% 35% repeat;
+    -o-border-image: url(_img/piwo_border.png)  35% 35% repeat;
+    border-image: url(_img/piwo_border.png) 35% 35% repeat;
+}
+
+.backOf{
+    background-image: url(_img/piwo.png), url(_img/wood_texture.jpg);
+    background-position: bottom left, 100% center;
+    background-origin: border-box, content-box;
+    background-repeat: no-repeat, repeat;
+    
+}
+

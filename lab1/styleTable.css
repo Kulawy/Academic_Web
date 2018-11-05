@@ -1,0 +1,8 @@
+.backOf{
+    background-image: url(_img/piwo.png), url(_img/wood_texture.jpg);
+    background-position: bottom left, 100% center;
+    background-origin: border-box, content-box;
+    background-repeat: no-repeat, repeat;
+    height: 800px;
+    margin: 0 0 4em 0;
+}
