@@ -1,0 +1,18 @@
+
+
+
+.beers{
+    margin: 6em;
+}
+
+.button_wraper{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     
+}
+
+button{
+    margin:0;
+}

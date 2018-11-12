@@ -20,7 +20,7 @@ article{
 @keyframes movingImage
     {
         0% {opacity: 1; left: 150px; top: 0px;}
-        25% {opacity: 0; left: -50px; top:0px;}
+        25% {opacity: 0; left: 350px; top:0px;}
         50% {opacity: 1; left: 150px; top: 0px;}
         75% {opacity: 0; left: 350px; top: 0px;}
         100% {opacity: 1; left: 150px; top: 0px;}

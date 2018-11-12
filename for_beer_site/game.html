@@ -5,11 +5,7 @@
     <meta charset="UTF-8">
     <title>Piwerko</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="styleCatalog.css">
-
-    <!--[if lt IE 9]>
-            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+    <link rel="stylesheet" type="text/css" href="styleGame.css">
 </head>
 
 <body>
@@ -27,33 +23,39 @@
             </ul><br />
         </nav>
     </header>
-    <div class="backOf">
+    <div class="button_wraper">
+        <button id="startGame" onclick="startGame()">
+            Click me!
+        </button>
+    </div>
+
+    <div class="wrapper">
+        <div id="wrapperID">
+
+        </div>
         <section>
-            <h1 id="specView">Wybierz rodzaj piwa jaki luisz</h1>
-            <form action="post">
-                <input type="checkbox" name="jasne" value="light" />Jasne<br>
-                <input type="checkbox" name="ciemne" value="dark" />Ciemne<br>
-                <input type="submit" value="submit" />
-            </form>
-            <form action="post">
-                <input type="radio" name="beer" value="beerOne" />Piwo pierwsze<br>
-                <input type="radio" name="beer" value="beerTwo" />Piwo drugie<br>
-                <input type="submit" value="submit" /><input type="reset" value="Clear">
-            </form><br><br><br>
-            <div class="beerImg">
+            <!--<div class="beerImg">
                 <img id="empty" src="_img/emptyGlass.png">
                 <img id="full" src="_img/piwo.png">
-            </div>
+            </div>-->
+        </section><br>
+    </div><br>
 
-        </section>
-        <br>
+    <div class="button_wraper">
+        <button id="drinkBeer" onclick="drink()">
+            Drink!
+        </button>
     </div>
+    <br>
+
     <footer>
         <details>
             <summary>Copyright &copy; 2018 Jakub Geroń, Marcin Krawczyk - Studenci PWr</summary>
             <p>pictures are taken from googl search but edited</p>
         </details>
     </footer>
+    <script type="text/javascript" src="scriptGame.js">
+    </script>
 </body>
 
 </html>

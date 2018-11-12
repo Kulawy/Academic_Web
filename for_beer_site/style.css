@@ -4,7 +4,6 @@
 }
 */
 
-
 body{
     position: relative;
     padding: 0;
@@ -26,6 +25,10 @@ body{
     padding: 50px 0 ;
 }
 
+.wrapper{
+    position: relative;
+}
+
 section{
     /*max-width: 500px;
     margin: auto;*/
@@ -33,7 +36,8 @@ section{
     position: absolute;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, 0)
+    transform: translate(-50%, 0);
+    display: block;
     /*display: flex;
     align-items: center;*/
 }
