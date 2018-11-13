@@ -1,7 +1,6 @@
 var buttonSend = document.getElementById("sendMsg");
 
 function sendMail(){
-    
     buttonSend.addEventListener("click", showAlert, false);
 }
 
