@@ -28,13 +28,13 @@
     <section>
         <form method="POST" autocomplete="on">
             <label for="first_name">imie: </label>
-            <input name="first_name" autofocus />
+            <input name="first_name"  id="first_name" autofocus />
             <br />
-            <label for="last_name">nazwisko: </label>
-            <input name="last_name" required />
+            <label for="last_name"  >nazwisko: </label>
+            <input name="last_name" id="last_name" required />
             <br />
             <label for="month_bd">miesiac urodzin: </label>
-            <input name="month_bd" list="months" />
+            <input name="month_bd" id="month_bd" list="months" />
             <datalist id="months">
                 <option value="Styczeń">
                 <option value="Luty">
@@ -51,12 +51,12 @@
             </datalist>
             <br />
             <label for="address">email:
-                <input name="address" type="email" required />
+                <input name="address" id="email" type="email" required />
                 nazwa@nazwa_domeny.com
             </label>
             <br />
             <label for="phone">tel: +48
-                <input name="phone" type="tel" pattern="### ### ###" />
+                <input id="phone" name="phone" type="tel" pattern="### ### ###" />
                 XXX XXX XXX
             </label>
             <br />
@@ -64,12 +64,14 @@
             <input type="checkbox" name="opened" id="opened" checked="true" />
             <label for="opened">Zaznaczone ?</label>
             <br />
-            <input type="submit" value="Submit" />
+			<p id="helpText"></p>
+            <input type="submit" id="submit" value="Submit" />
         </form>
     </section>
     <footer>
         &copy; 2018 Jakub Geroń, Marcin Krawczyk - Studenci PWr
     </footer>
+	<script type="text/javascript" src="scriptRegister.js"></script>
 </body>
 
 </html>

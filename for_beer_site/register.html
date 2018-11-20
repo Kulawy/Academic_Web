@@ -28,7 +28,7 @@
     
        <form method = "post" autocomplete = "on">
            <p><label>First Name:              
-		        <input type = "text" id = "firstName"
+		        <input  type = "text" id = "firstName"
                 placeholder = "Imie" autocomplete /> (Imie)
              </label></p>
           <p><label>Last Name:
@@ -41,7 +41,7 @@
              </label></p>
 			 <p>
                <label>Tel:
-                  <input type = "tel" autocomplete placeholder = "(###) ###-####"
+                  <input type = "tel" id="tel" autocomplete placeholder = "(###) ###-####"
                      pattern = "\(\d{3}\) +\d{3}-\d{4}" /> 
                      (###) ###-####                                 
               </label>
@@ -64,6 +64,7 @@
                   <option value = "December"> 
                </datalist>                    
             </label></p>
+			<p id="helpText"></p>
             <p><input type = "submit" value = "Submit" />
 			<input type = "reset" value = "Clear" /></p>
          </form>
@@ -71,7 +72,7 @@
     </section>
     <footer>
         &copy; 2018 Jakub Geroń, Marcin Krawczyk - Studenci PWr
-    </footer>
+    </footer>>
 </body>
 
 </html>

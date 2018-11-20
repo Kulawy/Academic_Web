@@ -17,6 +17,10 @@ button{
     margin:0;
 }
 
+.darkBackground {
+	background-color: #33130d;
+}
+
 .beerImg{
     margin: 3em;
     width: 200px;
