@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 
@@ -32,6 +35,22 @@
                 <img id="piwo_paliwo" src="_img/img.png" height=300 width=400 alt="image of beer" />
             </a>
         </div>
+		<div>
+		<?php
+		  if (isset($_SESSION["login"]))
+		  {
+		  
+		  if ($_SESSION["login"]=="admin" && $_SESSION["password"]=="admin")
+		  {
+			  print("<p>Tajne piwo dla  zalogowanego użytkownika.</p>");
+		  }
+		  print("<a href='logout.php'>Logout</a>");
+		  
+		  }
+			
+		?>
+		</div>
+		
         <div id="around_text">
             <article>
 

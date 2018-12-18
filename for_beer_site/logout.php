@@ -1,4 +1,7 @@
-
+<?php
+// Start the session
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 
@@ -25,39 +28,18 @@
                 <li><a href="about.html">About Page</a></li>
                 <li class="active"><a href="contact.html">Contact</a></li>
                 <li><a href="additionalnfoForm.html">Tell us about yourself</a></li>
-                <li id="log_in"><a href="login2.html">Login</a></li>
+                <li id="log_in"><a href="logIn.html">Register</a></li>
             </ul><br />
         </nav>
     </header>
     <section>
+	<p> Zostałeś wylogowany. </p>
+	<?php
+		session_unset();
+		session_destroy();
+	?>
 	   
-        <form class="contactForm" method="POST" action="contact.php">
-            <label>email:</label>
-			<div>
-            <input name="address" id="address" />
-			</div>
-			   
-               <div><label>First name:</label></div>
-			   <div>
-               <input type = "text" name = "fname"></div>
-            <div><label>Last name:</label></div>
-			<div>
-              <input type = "text" name = "lname"></div>
-            <div><label>Email:</label></div>
-			  <div>
-              <input type = "text" name = "email"></div>            
-			  <div><label>Phone:</label></div>
-			  <div>
-              <input type = "text" name = "phone"
-                  placeholder = "(555) 555-5555"></div>
-              </div>  
-			  <div><label>Message:</label></div>
-			  <div>
-			  <textarea name="message" placeholder="enter your message here" ></textarea>
-			  </div>
-
-            <input id="sendMsg" type="submit" value="Send" />
-        </form>
+    
     </section>
     <footer>
         <details>
