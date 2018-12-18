@@ -61,11 +61,11 @@ function addBeerImage(i){
 
 
     var imageBeer = document.createElement("img");
-    imageBeer.setAttribute("src", "_img/piwo.png");
+    imageBeer.setAttribute("src", "../_img/piwo.png");
     imageBeer.classList.add("beerImage");
     imageBeer.setAttribute("id", "beerImg"+i);
     imageBeer.addEventListener("click",function(){
-        imageBeer.setAttribute("src", "_img/emptyGlass.png");
+        imageBeer.setAttribute("src", "../_img/emptyGlass.png");
         drinked++;
         checkState();
     },false);
