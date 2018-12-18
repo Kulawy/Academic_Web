@@ -1,5 +1,9 @@
 <?php
 // Start the session
+if (isset($_COOKIE['s_id']))
+{
+	session_id($_COOKIE['s_id']);
+}
 session_start();
 ?>
 <!DOCTYPE html>
@@ -8,7 +12,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <title>Piwerko</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
     <!--[if lt IE 9]>
                     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
                 <![endif]-->
@@ -19,13 +23,13 @@ session_start();
 
 <body>
     <header>
-        <a href="#navigation_bar"><img src=_img/banner.png width="100%" height="auto" alt="page banner" /></a>
+        <a href="#navigation_bar"><img src="../_img/banner.png" width="100%" height="auto" alt="page banner" /></a>
         <nav id="navigation_bar">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="catalog.html">Catalog</a></li>
-                <li><a href="aboutBeer.html">About Beers</a></li>
-                <li><a href="about.html">About Page</a></li>
+                <li><a href="../html/index.html">Home</a></li>
+                <li><a href="../html/catalog.html">Catalog</a></li>
+                <li><a href="../html/aboutBeer.html">About Beers</a></li>
+                <li><a href="../html/about.html">About Page</a></li>
                 <li class="active"><a href="contact.html">Contact</a></li>
                 <li><a href="additionalnfoForm.html">Tell us about yourself</a></li>
                 <li id="log_in"><a href="logIn.html">Register</a></li>
@@ -35,6 +39,12 @@ session_start();
     <section>
 	<p> Zostałeś wylogowany. </p>
 	<?php
+	if (isset($_COOKIE['s_id']))
+    {
+	   
+	   unset($_COOKIE['s_id']);
+    }
+		setcookie("s_id", "", time()-3600);
 		session_unset();
 		session_destroy();
 	?>

@@ -1,9 +1,9 @@
 #specView{
     border: 2em solid transparent;
-    -webkit-border-image: url(_img/piwo_border.png) 35% 35% repeat;
-    -moz-border-image: url(_imgpiwo_border.png)  35% 35% repeat;
-    -o-border-image: url(_img/piwo_border.png)  35% 35% repeat;
-    border-image: url(_img/piwo_border.png) 35% 35% repeat;
+    -webkit-border-image: url(../_img/piwo_border.png) 35% 35% repeat;
+    -moz-border-image: url(../_imgpiwo_border.png)  35% 35% repeat;
+    -o-border-image: url(../_img/piwo_border.png)  35% 35% repeat;
+    border-image: url(../_img/piwo_border.png) 35% 35% repeat;
 }
 
 /*

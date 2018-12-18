@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Piwerko</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
     <!--[if lt IE 9]>
                     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
                 <![endif]-->
@@ -15,7 +15,7 @@
 
 <body>
     <header>
-        <a href="#navigation_bar"><img src=_img/banner.png width="100%" height="auto" alt="page banner" /></a>
+        <a href="#navigation_bar"><img src=../_img/banner.png width="100%" height="auto" alt="page banner" /></a>
         <nav id="navigation_bar">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -82,7 +82,7 @@
             <p>pictures are taken from googl search but edited</p>
         </details>
     </footer>
-    <script type="text/javascript" src="scriptContact.js"></script>
+    <script type="text/javascript" src="../js/scriptContact.js"></script>
 </body>
 
 </html>
