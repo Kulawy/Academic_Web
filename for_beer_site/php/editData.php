@@ -51,6 +51,28 @@ session_start();
                   die('Unable to connect to database [' . $conn->connect_error . ']');
                 }
 				
+				if (!preg_match('/^[A-Za-z]{1}[A-Za-z0-9]{5,15}$/', $login))
+                {
+				  mysqli_close($conn);
+                  die('wrong login');
+                } 
+				
+				if (strlen($password)<5 && strlen($password)>15)
+                {
+				  mysqli_close($conn);
+                  die('wrong password');
+                } 
+				
+				$rexSafety = "/[\^<,\"@\/\{\}\(\)\*\$%\?=>:\|;#]+/i";
+				if (preg_match($rexSafety, $name)) {
+				   die('wrong name');
+				} 						
+				if (preg_match($rexSafety, $lastname)) {
+				   die('wrong lastname');
+				} 
+				
+				
+				
 				$sql = 'UPDATE accounts SET u_login='.'\''.$login.'\''.', u_password='.'\''.$password.'\''.',u_name='.'\''.$name.'\''.',u_lastname='.'\''.$lastname.'\''.' WHERE id='.'\''.$u_id.'\'';
 				
 				mysqli_query($conn,$sql);

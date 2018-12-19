@@ -44,32 +44,46 @@ session_start();
 				{
 					print('Jesteś zalogowany, możesz edytować swoje dane');
 					
+			    $conn = mysqli_connect('localhost', 'root', '', 'site_users');
+				if($conn->connect_errno > 0){
+                  die('Unable to connect to database [' . $conn->connect_error . ']');
+                }
+				$user_id=$_SESSION['user_id'];
+				
+				$sql='SELECT * from accounts WHERE id='.'\''.$user_id.'\'';
+				
+				$result = mysqli_query($conn, $sql);
+				$row = mysqli_fetch_assoc($result);
+			
+					
+					
 				?>
 				<h2>Edytuj dane</h2>
 				<form class="contactForm" method="POST" action="editData.php">
                 <label>login:</label>
 			    <div>
-                <input type="text" name="login" id="address" value="login" />
+                <input type="text" name="login" id="address" value="<?php print $row['u_login'];?>"/>
 			    </div>
 				
 				<label>Name:</label>
 			    <div>
-                <input type="text" name="name" id="address" value="login" />
+                <input type="text" name="name" id="address" value="<?php print $row['u_name'];?>" />
 			    </div>
 				
 				<label>Lastname:</label>
 			    <div>
-                <input type="text" name="lastname" id="address" value="login" />
+                <input type="text" name="lastname" id="address" value="<?php print $row['u_lastname'];?>" />
 			    </div>
 			   
                 <label>Password:</label>
 			    <div>
-			    <input type="password" name="password"  value="password" />
+			    <input type="password" name="password"  value="<?php print $row['u_password'];?>" />
 			    </div>
 
             <input id="sendMsg" type="submit" value="Submit" />
         </form>
-			<?php }
+			<?php 
+			mysqli_close($conn); }
 			    else 
 				{ ?>
 					
